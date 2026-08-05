@@ -456,12 +456,12 @@ def _inject_via_batch(command: str, key: str) -> tuple[bool, str]:
         return False, f"FAIL: Write error: {e}"
 
     try:
-        pyautogui.write(f"run {cmd_file.stem}", interval=0.02)
+        pyautogui.write(f"run {cmd_file.name}", interval=0.02)
         time.sleep(0.15)
         pyautogui.press("enter")
         time.sleep(0.3)
         pyautogui.press(key)
-        logger.debug(f"Typed 'run {cmd_file.stem}' and pressed enter")
+        logger.debug(f"Typed 'run {cmd_file.name}' and pressed enter")
     except Exception as e:
         logger.error(f"Execution error: {e}")
         cmd_file.unlink(missing_ok=True)
