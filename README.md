@@ -55,7 +55,7 @@ AI isn't responding? Enable Mock Mode to check if the UI works at all. Verify yo
 ## Source Code
 
 ```bash
-git clone https://github.com/your-repo/GalacticConclave.git
+git clone https://github.com/whataboutism-alos/GalacticConclave.git
 cd GalacticConclave
 python -m venv venv
 venv\Scripts\activate
